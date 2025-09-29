@@ -77,7 +77,8 @@ export default function ConsultationForm() {
       });
 
       const result = await response.json();
-      
+      console.log("Result is done.", result);
+
       if (!response.ok) {
         throw new Error(result.message || 'Failed to send');
       }
