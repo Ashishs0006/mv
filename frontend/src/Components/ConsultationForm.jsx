@@ -60,7 +60,7 @@ export default function ConsultationForm() {
     setMessageType("");
 
     try {
-      const response = await fetch("/api/consultations", {
+      const response = await fetch("https://mind-virksha-suv9.vercel.app/api/consultations", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -174,7 +174,7 @@ export default function ConsultationForm() {
       
       <div>
         <ReCAPTCHA
-          sitekey="6LdI39grAAAAAPX3IPZViYA0zB7ETMYCAylyA5p8"
+          sitekey="6LcEXM4rAAAAACXH_v75PU1BFgitK2_sPMARAt6n"
           onChange={onRecaptcha}
         />
         <p className="text-red-500">{errors.recaptcha?.message}</p>
